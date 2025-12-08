@@ -16,11 +16,13 @@ import {
   FaUserMd
 } from 'react-icons/fa';
 import { GiKidneys } from 'react-icons/gi';
+import { redirect } from 'next/dist/server/api-utils';
 
 export default function FeaturesPage() {
   const mlModels = [
     {
       id: 'diabetes-prediction',
+      redirectUrl: '/models/diabetes-prediction',
       title: 'Diabetes Prediction',
       description: 'Predict the likelihood of developing diabetes based on health metrics, lifestyle factors, and genetic markers.',
       icon: <FaChartLine className="text-3xl text-green-600" />,
@@ -32,6 +34,7 @@ export default function FeaturesPage() {
     },
     {
       id: 'heart-attack-prediction',
+      redirectUrl: '/coming-soon',
       title: 'Heart Attack Risk Assessment',
       description: 'Assess heart attack risk using ECG data, cholesterol levels, blood pressure, and other cardiovascular indicators.',
       icon: <FaHeartbeat className="text-3xl text-red-600" />,
@@ -43,6 +46,7 @@ export default function FeaturesPage() {
     },
     {
       id: 'insurance-cost-prediction',
+      redirectUrl: '/coming-soon',
       title: 'Insurance Cost Prediction',
       description: 'Predict healthcare insurance costs using demographic data, medical history, and lifestyle factors.',
       icon: <FaShieldAlt className="text-3xl text-blue-600" />,
@@ -54,6 +58,7 @@ export default function FeaturesPage() {
     },
     {
       id: 'parkinsons-detection',
+      redirectUrl: '/coming-soon',
       title: 'Parkinson\'s Disease Detection',
       description: 'Early detection of Parkinson\'s disease using voice recordings and motor function assessments.',
       icon: <FaBrain className="text-3xl text-purple-600" />,
@@ -65,6 +70,7 @@ export default function FeaturesPage() {
     },
     {
       id: 'cancer-risk-assessment',
+      redirectUrl: '/coming-soon',
       title: 'Cancer Risk Assessment',
       description: 'Assess risk for various cancers using genetic markers, lifestyle factors, and screening results.',
       icon: <FaDna className="text-3xl text-pink-600" />,
@@ -76,6 +82,7 @@ export default function FeaturesPage() {
     },
     {
       id: 'kidney-disease-prediction',
+      redirectUrl: '/coming-soon',
       title: 'Kidney Disease Prediction',
       description: 'Predict chronic kidney disease using blood test results, urine analysis, and medical history.',
       icon: <GiKidneys className="text-3xl text-orange-600" />,
@@ -86,29 +93,8 @@ export default function FeaturesPage() {
       statusColor: 'bg-green-100 text-green-800'
     },
     {
-      id: 'lung-disease-detection',
-      title: 'Lung Disease Detection',
-      description: 'Detect respiratory conditions using X-ray images, spirometry results, and symptom analysis.',
-      icon: <FaLungs className="text-3xl text-cyan-600" />,
-      color: 'from-cyan-500 to-teal-600',
-      accuracy: '93%',
-      inputs: ['X-ray Images', 'Spirometry', 'Smoking History', 'Symptoms', 'Age'],
-      status: 'Clinical Trial',
-      statusColor: 'bg-yellow-100 text-yellow-800'
-    },
-    {
-      id: 'retinopathy-detection',
-      title: 'Diabetic Retinopathy Detection',
-      description: 'Early detection of diabetic retinopathy using retinal scan images and ML image classification.',
-      icon: <FaEye className="text-3xl text-indigo-600" />,
-      color: 'from-indigo-500 to-blue-600',
-      accuracy: '97%',
-      inputs: ['Retinal Images', 'Diabetes Duration', 'Blood Sugar Levels', 'Age'],
-      status: 'Production Ready',
-      statusColor: 'bg-green-100 text-green-800'
-    },
-    {
       id: 'medication-recommendation',
+      redirectUrl: '/coming-soon',
       title: 'Personalized Medication',
       description: 'AI-powered medication recommendations based on patient profile, genetics, and drug interactions.',
       icon: <FaPills className="text-3xl text-emerald-600" />,
@@ -256,7 +242,7 @@ export default function FeaturesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {mlModels.map((model) => (
                 <Link 
-                  href={`/models/${model.id}`} 
+                  href={`${model.redirectUrl}`} 
                   key={model.id}
                   className="group block"
                 >
