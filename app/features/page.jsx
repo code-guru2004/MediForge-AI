@@ -33,6 +33,18 @@ export default function FeaturesPage() {
       statusColor: 'bg-green-100 text-green-800'
     },
     {
+      id: 'insurance-cost-prediction',
+      redirectUrl: '/models/insurance-prediction',
+      title: 'Insurance Cost Prediction',
+      description: 'Predict healthcare insurance costs using demographic data, medical history, and lifestyle factors.',
+      icon: <FaShieldAlt className="text-3xl text-blue-600" />,
+      color: 'from-blue-500 to-indigo-600',
+      accuracy: '89%',
+      inputs: ['Age', 'BMI', 'Smoking Status', 'Region', 'Children'],
+      status: 'Production Ready',
+      statusColor: 'bg-green-100 text-green-800'
+    },
+    {
       id: 'heart-attack-prediction',
       redirectUrl: '/coming-soon',
       title: 'Heart Attack Risk Assessment',
@@ -44,18 +56,7 @@ export default function FeaturesPage() {
       status: 'Production Ready',
       statusColor: 'bg-green-100 text-green-800'
     },
-    {
-      id: 'insurance-cost-prediction',
-      redirectUrl: '/coming-soon',
-      title: 'Insurance Cost Prediction',
-      description: 'Predict healthcare insurance costs using demographic data, medical history, and lifestyle factors.',
-      icon: <FaShieldAlt className="text-3xl text-blue-600" />,
-      color: 'from-blue-500 to-indigo-600',
-      accuracy: '89%',
-      inputs: ['Age', 'BMI', 'Smoking Status', 'Region', 'Children'],
-      status: 'Production Ready',
-      statusColor: 'bg-green-100 text-green-800'
-    },
+    
     {
       id: 'parkinsons-detection',
       redirectUrl: '/coming-soon',
