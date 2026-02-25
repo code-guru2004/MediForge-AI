@@ -45,66 +45,18 @@ export default function FeaturesPage() {
       statusColor: 'bg-green-100 text-green-800'
     },
     {
-      id: 'heart-attack-prediction',
-      redirectUrl: '/coming-soon',
-      title: 'Heart Attack Risk Assessment',
-      description: 'Assess heart attack risk using ECG data, cholesterol levels, blood pressure, and other cardiovascular indicators.',
-      icon: <FaHeartbeat className="text-3xl text-red-600" />,
-      color: 'from-red-500 to-pink-600',
-      accuracy: '96%',
-      inputs: ['ECG Data', 'Cholesterol', 'Blood Pressure', 'Age', 'Smoking Status'],
-      status: 'Production Ready',
-      statusColor: 'bg-green-100 text-green-800'
-    },
-    
-    {
-      id: 'parkinsons-detection',
-      redirectUrl: '/coming-soon',
-      title: 'Parkinson\'s Disease Detection',
-      description: 'Early detection of Parkinson\'s disease using voice recordings and motor function assessments.',
-      icon: <FaBrain className="text-3xl text-purple-600" />,
-      color: 'from-purple-500 to-violet-600',
-      accuracy: '92%',
-      inputs: ['Voice Features', 'Motor UPDRS', 'Tremor Data', 'Age', 'Family History'],
-      status: 'Clinical Trial',
-      statusColor: 'bg-yellow-100 text-yellow-800'
-    },
-    {
-      id: 'cancer-risk-assessment',
-      redirectUrl: '/coming-soon',
-      title: 'Cancer Risk Assessment',
-      description: 'Assess risk for various cancers using genetic markers, lifestyle factors, and screening results.',
-      icon: <FaDna className="text-3xl text-pink-600" />,
-      color: 'from-pink-500 to-rose-600',
-      accuracy: '91%',
-      inputs: ['Genetic Markers', 'Family History', 'Lifestyle', 'Age', 'Previous Screenings'],
-      status: 'Research Phase',
-      statusColor: 'bg-blue-100 text-blue-800'
-    },
-    {
       id: 'kidney-disease-prediction',
-      redirectUrl: '/coming-soon',
+      redirectUrl: '/models/ckd-prediction',
       title: 'Kidney Disease Prediction',
       description: 'Predict chronic kidney disease using blood test results, urine analysis, and medical history.',
       icon: <GiKidneys className="text-3xl text-orange-600" />,
       color: 'from-orange-500 to-amber-600',
-      accuracy: '95%',
+      accuracy: '100%',
       inputs: ['Blood Pressure', 'Albumin', 'Serum Creatinine', 'Age', 'Diabetes Status'],
       status: 'Production Ready',
       statusColor: 'bg-green-100 text-green-800'
     },
-    {
-      id: 'medication-recommendation',
-      redirectUrl: '/coming-soon',
-      title: 'Personalized Medication',
-      description: 'AI-powered medication recommendations based on patient profile, genetics, and drug interactions.',
-      icon: <FaPills className="text-3xl text-emerald-600" />,
-      color: 'from-emerald-500 to-green-600',
-      accuracy: '88%',
-      inputs: ['Medical History', 'Genetics', 'Current Meds', 'Age', 'Allergies'],
-      status: 'Research Phase',
-      statusColor: 'bg-blue-100 text-blue-800'
-    }
+
   ];
 
   const categories = [
@@ -119,8 +71,8 @@ export default function FeaturesPage() {
   const stats = [
     { label: 'Total Models', value: mlModels.length },
     { label: 'Average Accuracy', value: '93%' },
-    { label: 'Active Users', value: '10K+' },
-    { label: 'Clinical Partners', value: '15+' },
+    { label: 'Data sets', value: '1000+' },
+    { label: '', value: '15+' },
   ];
 
   return (
@@ -314,9 +266,9 @@ export default function FeaturesPage() {
                 <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
                   <div className="flex items-center mb-2">
                     <FaBrain className="mr-3 text-blue-400" />
-                    <h4 className="font-bold">Alzheimer's Early Detection</h4>
+                    <h4 className="font-bold">Heart deasease Detection</h4>
                   </div>
-                  <p className="text-sm text-gray-300">Using cognitive test results and MRI data</p>
+                  <p className="text-sm text-gray-300">Using cognitive test results and kaggle data</p>
                   <div className="mt-3 text-xs text-blue-300">Expected Q3 2024</div>
                 </div>
                 
