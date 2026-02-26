@@ -15,7 +15,7 @@ import {
   FaMobileAlt,
   FaUserMd
 } from 'react-icons/fa';
-import { GiKidneys } from 'react-icons/gi';
+import { GiKidneys, GiPaper } from 'react-icons/gi';
 import { redirect } from 'next/dist/server/api-utils';
 
 export default function FeaturesPage() {
@@ -265,21 +265,21 @@ export default function FeaturesPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
                   <div className="flex items-center mb-2">
-                    <FaBrain className="mr-3 text-blue-400" />
-                    <h4 className="font-bold">Heart deasease Detection</h4>
+                    <GiPaper className="mr-3 text-blue-400" />
+                    <h4 className="font-bold">Prescription Analyze</h4>
                   </div>
-                  <p className="text-sm text-gray-300">Using cognitive test results and kaggle data</p>
-                  <div className="mt-3 text-xs text-blue-300">Expected Q3 2024</div>
+                  <p className="text-sm text-gray-300">Using "Pdf-parse" we get all data from Prescription</p>
+                  <div className="mt-3 text-xs text-blue-300">Expected Q1 2025</div>
                 </div>
                 
-                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                {/* <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
                   <div className="flex items-center mb-2">
                     <FaMobileAlt className="mr-3 text-green-400" />
                     <h4 className="font-bold">Mental Health Assessment</h4>
                   </div>
                   <p className="text-sm text-gray-300">Based on speech patterns and mobile usage</p>
                   <div className="mt-3 text-xs text-green-300">Expected Q4 2024</div>
-                </div>
+                </div> */}
               </div>
             </div>
 
