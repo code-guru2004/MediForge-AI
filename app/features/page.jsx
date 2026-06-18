@@ -47,9 +47,9 @@ export default function FeaturesPage() {
 
   const stats = [
     { label: 'Total Models', value: mlModels.length },
-    { label: 'Average Accuracy', value: '93%' },
+    { label: 'Average Accuracy', value: '99%' },
     { label: 'Data sets', value: '1000+' },
-    { label: '', value: '15+' },
+    { label: 'Input Values', value: '15+' },
   ];
 
   return (
@@ -254,7 +254,7 @@ export default function FeaturesPage() {
                     <FaMobileAlt className="mr-3 text-green-400" />
                     <h4 className="font-bold">Mental Health Assessment</h4>
                   </div>
-                  <p className="text-sm text-gray-300">Based on speech patterns and mobile usage</p>
+                  <p className="text-sm text-gray-300">B\u003CGiPaper className=\"mr-3 text-blue-400\" />ased on speech patterns and mobile usage</p>
                   <div className="mt-3 text-xs text-green-300">Expected Q4 2024</div>
                 </div> */}
               </div>
