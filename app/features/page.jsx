@@ -20,30 +20,7 @@ import { redirect } from 'next/dist/server/api-utils';
 
 export default function FeaturesPage() {
   const mlModels = [
-    {
-      id: 'diabetes-prediction',
-      redirectUrl: '/models/diabetes-prediction',
-      title: 'Diabetes Prediction',
-      description: 'Predict the likelihood of developing diabetes based on health metrics, lifestyle factors, and genetic markers.',
-      icon: <FaChartLine className="text-3xl text-green-600" />,
-      color: 'from-green-500 to-emerald-600',
-      accuracy: '94%',
-      inputs: ['Glucose Level', 'BMI', 'Age', 'Family History', 'Blood Pressure'],
-      status: 'Production Ready',
-      statusColor: 'bg-green-100 text-green-800'
-    },
-    {
-      id: 'insurance-cost-prediction',
-      redirectUrl: '/models/insurance-prediction',
-      title: 'Insurance Cost Prediction',
-      description: 'Predict healthcare insurance costs using demographic data, medical history, and lifestyle factors.',
-      icon: <FaShieldAlt className="text-3xl text-blue-600" />,
-      color: 'from-blue-500 to-indigo-600',
-      accuracy: '89%',
-      inputs: ['Age', 'BMI', 'Smoking Status', 'Region', 'Children'],
-      status: 'Production Ready',
-      statusColor: 'bg-green-100 text-green-800'
-    },
+   
     {
       id: 'kidney-disease-prediction',
       redirectUrl: '/models/ckd-prediction',
