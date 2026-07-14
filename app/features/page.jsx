@@ -20,30 +20,7 @@ import { redirect } from 'next/dist/server/api-utils';
 
 export default function FeaturesPage() {
   const mlModels = [
-    {
-      id: 'diabetes-prediction',
-      redirectUrl: '/models/diabetes-prediction',
-      title: 'Diabetes Prediction',
-      description: 'Predict the likelihood of developing diabetes based on health metrics, lifestyle factors, and genetic markers.',
-      icon: <FaChartLine className="text-3xl text-green-600" />,
-      color: 'from-green-500 to-emerald-600',
-      accuracy: '94%',
-      inputs: ['Glucose Level', 'BMI', 'Age', 'Family History', 'Blood Pressure'],
-      status: 'Production Ready',
-      statusColor: 'bg-green-100 text-green-800'
-    },
-    {
-      id: 'insurance-cost-prediction',
-      redirectUrl: '/models/insurance-prediction',
-      title: 'Insurance Cost Prediction',
-      description: 'Predict healthcare insurance costs using demographic data, medical history, and lifestyle factors.',
-      icon: <FaShieldAlt className="text-3xl text-blue-600" />,
-      color: 'from-blue-500 to-indigo-600',
-      accuracy: '89%',
-      inputs: ['Age', 'BMI', 'Smoking Status', 'Region', 'Children'],
-      status: 'Production Ready',
-      statusColor: 'bg-green-100 text-green-800'
-    },
+   
     {
       id: 'kidney-disease-prediction',
       redirectUrl: '/models/ckd-prediction',
@@ -70,9 +47,9 @@ export default function FeaturesPage() {
 
   const stats = [
     { label: 'Total Models', value: mlModels.length },
-    { label: 'Average Accuracy', value: '93%' },
+    { label: 'Average Accuracy', value: '99%' },
     { label: 'Data sets', value: '1000+' },
-    { label: '', value: '15+' },
+    { label: 'Input Values', value: '15+' },
   ];
 
   return (
@@ -277,7 +254,7 @@ export default function FeaturesPage() {
                     <FaMobileAlt className="mr-3 text-green-400" />
                     <h4 className="font-bold">Mental Health Assessment</h4>
                   </div>
-                  <p className="text-sm text-gray-300">Based on speech patterns and mobile usage</p>
+                  <p className="text-sm text-gray-300">B\u003CGiPaper className=\"mr-3 text-blue-400\" />ased on speech patterns and mobile usage</p>
                   <div className="mt-3 text-xs text-green-300">Expected Q4 2024</div>
                 </div> */}
               </div>
